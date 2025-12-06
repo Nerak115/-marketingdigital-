@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPULSO - DIGITAL</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+
+    <form action="" method="get">
+        <p>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre" maxlength="50" />
+        </p>
+
+        <p>
+            <label for="Apellidos">Apellidos:</label>
+            <input type="text" name="Apellidos" id="Apellidos" maxlength="50" />
+        </p>
+
+        <p>
+            <label for="Teléfono">Teléfono:</label>
+            <input type="text" name="Teléfono" id="Teléfono" maxlength="50" />
+        </p>
+
+        <p>
+            Sexo:
+            <input type="radio" name="Sexo" id="Sexo-h" value="h" />
+            <label for="Sexo-h" style="display: inline; font-weight: normal;">Hombre</label>
+
+            <input type="radio" name="Sexo" id="Sexo-m" value="m" />
+            <label for="Sexo-m" style="display: inline; font-weight: normal;">Mujer</label>
+        </p>
+
+        <p>
+            <label for="población">población</label>
+            <select name="población" id="población">
+                <option>Medellin</option>
+                <option>Bogotá</option>
+                <option>Cali</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="descripción">Motivo</label>
+            <textarea name="descripción"  id="descripción" rows="6" cols="60"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" name="condiciones" id="condiciones" />
+            <label for="condiciones" style="display: inline; font-weight: normal;">
+                Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+            </label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" />
+        </p>
+    </form> 
+
+</body>
+</html> 

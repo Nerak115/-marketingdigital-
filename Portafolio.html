@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://plus.unsplash.com/premium_photo-1683288062212-9da20bc0a18f?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" rel="stylesheet">
+    <style>
+       
+
+        :root {
+            --color-principal: #295c63; 
+            --color-acento: #0c0c0b; 
+            --color-fondo: #dad4d4; 
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-fondo);
+            color: var(--color-principal);
+        }
+
+        /* Estilos del Encabezado (Reutilizados del boceto anterior) */
+        header {
+            background-color: #949191;
+            border-bottom: 1px solid #6b77ac;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            color: var(--color-principal);
+            text-decoration: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--color-principal);
+            margin: 0 15px;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--color-acento);
+        }
+        
+        /* Estilos del Contenido Principal de Colecciones */
+        .page-title {
+            text-align: center;
+            padding: 60px 20px 20px;
+        }
+
+        .page-title h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            color: var(--color-principal);
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            font-size: 1.1em;
+            color: #0a0909;
+        }
+
+        .colecciones-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px; /* Espacio entre las tarjetas */
+            padding: 20px 50px 80px;
+        }
+
+        .coleccion-card {
+            width: 400px; /* Ancho fijo para las tarjetas */
+            height: 550px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+
+        .coleccion-card:hover {
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .coleccion-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .coleccion-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .info-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(192, 203, 221, 0.9); /* Fondo semitransparente blanco */
+            padding: 20px;
+            text-align: center;
+            transition: background 0.5s;
+        }
+        
+        .coleccion-card:hover .info-overlay {
+            background: rgb(207, 182, 69);
+        }
+
+        .info-overlay h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            color: var(--color-acento);
+            margin: 0 0 5px 0;
+        }
+
+        .info-overlay p {
+            font-size: 0.9em;
+            color: #0a0a0a;
+            margin: 0;
+        }
+
+        /* 4. Pie de Página (Footer) - Reutilizado */
+        footer {
+            background-color: var(--color-principal);
+            color: #e2dddd;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Media Queries para responsividad */
+        @media (max-width: 900px) {
+            .colecciones-grid {
+                padding: 20px 20px;
+            }
+            .coleccion-card {
+                width: 100%;
+                max-width: 450px;
+                height: 450px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">IMPULSO - DIGITAL</a>
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="#" style="color: var(--color-acento);">Portafolio</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="Ubicación.html">Ubicación</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>El crecimiento comienza con una buena estrategia</h1>
+        
+        </section>
+
+        <section class="colecciones-grid">
+            
+            <a href="Portafolio.html" class="coleccion-card">
+                <img src="https://plus.unsplash.com/premium_photo-1683288062212-9da20bc0a18f?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="estrategia">
+                <div class="info-overlay">
+                   
+                    <p>En un mundo donde la competencia es cada vez más fuerte y los consumidores son más exigentes, tu marca necesita mucho más que presencia: necesita estrategia, creatividad y resultados medibles. En nuestra agencia trabajamos de manera integral, analizando tu negocio, entendiendo tus objetivos y diseñando un plan de marketing capaz de generar crecimiento real. Combinamos performance, branding, contenido y analítica para posicionarte de forma sólida en el mercado, atraer nuevos clientes y construir relaciones duraderas con tu audiencia.</p>
+                </div>
+            </a>
+
+            <a href="Portafolio.html" class="coleccion-card">
+                <img src="https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="info-overlay">
+                
+                    <p>La publicidad digital es una de las herramientas más poderosas para hacer crecer tu negocio, pero solo funciona cuando está bien ejecutada. En nuestra agencia gestionamos campañas en Google Ads, Meta Ads y otras plataformas con un enfoque estratégico orientado a resultados. Segmentamos la audiencia correcta, diseñamos anuncios persuasivos y optimizamos constantemente para maximizar el retorno de tu inversión. Cada peso invertido tiene un propósito: generar más alcance, más clics, más ventas y más oportunidades para tu empresa.</p>
+                </div>
+     
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 IMPULSO - DIGITAL. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos de Uso</a> | 
+            <a href="#">Síguenos en Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
